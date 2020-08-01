@@ -7,5 +7,10 @@ pipeline {
         git 'https://github.com/siva244/spring-petclinic.git'   
     }
 }
+      stage("build"){
+        steps{
+        sh 'mvn package'  
+    }
+}
 }
 }
